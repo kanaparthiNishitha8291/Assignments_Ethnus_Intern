@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hoverable Sidenav Buttons</title>
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+      margin: 0;
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 60px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #f1f1f1;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    .sidenav a {
+      padding: 6px 0px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      display: block;
+      margin: 10px 0;
+      height: 50px;
+      width: 50px;
+      transition: 0.3s;
+      border-radius: 5px;
+    }
+
+    .sidenav a:hover {
+      width: 180px;
+      color: black;
+    }
+
+    .green {
+      background-color: #04AA6D;
+    }
+
+    .blue {
+      background-color: #2196F3;
+    }
+
+    .red {
+      background-color: #f44336;
+    }
+
+    .gray {
+      background-color: #555;
+    }
+
+    .main {
+      margin-left: 70px; /* Adjust to avoid overlapping */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="#" class="green"></a>
+  <a href="#" class="blue"></a>
+  <a href="#" class="red"></a>
+  <a href="#" class="gray"></a>
+</div>
+
+<div class="main">
+  <h2>Hoverable Sidenav Buttons</h2>
+  <p>Hover over the buttons in the left side navigation to open them.</p>
+</div>
+
+</body>
+</html>
